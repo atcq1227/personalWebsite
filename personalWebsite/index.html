@@ -3,18 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>home</title>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="js/animation.js"></script>
   </head>
 
-  <div id="textbox" style="position:absolute;margin:20px;box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);">
-  <h1 class="alignleft">matt shaw:</h1>
-  <h1 class="alignright">
-    <a style="text-decoration:none;" href="pages/about.html">about</a>
-    <a style="text-decoration:none;" href="pages/audio.html">audio</a>
-    <a style="text-decoration:none;" href="pages/visual.html">visual</a>
-    <a style="text-decoration:none;" href="contact.html">contact</a>
-  </h1>
+  <div class="nav">
+    <h1>
+      <a style="text-decoration:none;" href="#" id="index" class="triggerButton">home</a>
+      <a style="text-decoration:none;" href="#" id="about" class="triggerButton">about</a>
+      <a style="text-decoration:none;" href="#" id="audio" class="triggerButton">audio</a>
+      <a style="text-decoration:none;" href="pages/visual.html" class="transition">visual</a>
+      <a style="text-decoration:none;" href="pages/contact.html" class="transition">contact</a>
+    </h1>
+  </div>
+
+  <div class=index></div>
+
+  <div class=about>
+    <div class="textbox">
+    <img style="position:fixed;top:150px;left:20px;width:500px;height:500px;box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);" src="images/recital.jpg">
+
+      <p style="position:fixed;top:150px;left:550px;"><b> i am matt shaw, a musician and coder based in dallas, texas.
+      <br><br>
+       i play music solo as well as with numerous bands including the <a href=https://dillonmyers.com/> dillon myers band</a>, <a href="https://www.facebook.com/Uda-Essim-Triangle-868856206560671/">uda essim triangle</a>, <a href="https://jakenice.wordpress.com/">jake nice</a>, <a href="http://www.tbamusicbooking.com/">tba music</a>, and various jazz bands. <br><br>
+
+      i have been coding freelance since 2016. most of my code is available on my <a href="https://www.github.com/atcq1227">github</a>.<br><br>
+
+      i attended southern methodist university where i graduated with honors with a double major in creative computation and music.<br><br>
+
+      during my time at smu, i received the engaged learning grant to develop a system, ujux, that detects and improvises music based on human audio input. it does so by using digital signal processing techniques and artificial intelligence algorithms. <br><br>
+
+      i also composed the first three etudes of "songbook for ujux", an "open source composition" that uses ujux in creative ways to make music and allows others to expand the songbook with their own compositions.<br><br></b>
+      </p>
+    </div>
+  </div>
+
+  <div class=audio>
+    test
   </div>
 
   <body>

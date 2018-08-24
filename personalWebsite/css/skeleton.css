@@ -420,6 +420,20 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+.nav {
+  position:absolute;
+  float:left;
+  margin:20px;
+  box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+.textbox {
+  display:none;
+  position:absolute;
+  float:left;
+  margin:20px;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
