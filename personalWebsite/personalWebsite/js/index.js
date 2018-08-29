@@ -98,8 +98,6 @@ float map(float value, float min1, float max1, float min2, float max2) {
 }
 
 void main() {
-    //vec2 uv = vUv * u_resolution;
-    
     vec2 st = gl_FragCoord.xy/vec2(640,480);
     st.x *= 640.0/480.0;
     
