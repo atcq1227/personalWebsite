@@ -10,6 +10,14 @@
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 
     <script type="text/javascript" src="js/animation.js"></script>
+
+    <script type="text/javascript">
+      <!--
+      if (screen.width <= 699) {
+      document.location = "mobile.html";
+      }
+      //-->
+</script>
   </head>
 
   <div class="nav">
@@ -17,8 +25,8 @@
       <a style="text-decoration:none;" href="#" id="index" class="triggerButton">home</a>
       <a style="text-decoration:none;" href="#" id="about" class="triggerButton">about</a>
       <a style="text-decoration:none;" href="#" id="audio" class="triggerButton">audio</a>
-      <a style="text-decoration:none;" href="pages/visual.html" class="transition">visual</a>
-      <a style="text-decoration:none;" href="pages/contact.html" class="transition">contact</a>
+      <a style="text-decoration:none;" href="#" id="visual" class="triggerButton">visual</a>
+      <a style="text-decoration:none;" href="#" id="contact" class="triggerButton">contact</a>
     </h1>
   </div>
 
@@ -26,25 +34,97 @@
 
   <div class=about>
     <div class="textbox">
-    <img style="position:fixed;top:150px;left:20px;width:500px;height:500px;box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);" src="images/recital.jpg">
+      <img style="position:fixed;top:150px;left:20px;width:500px;height:500px;box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);" src="images/recital.jpg">
 
-      <p style="position:fixed;top:150px;left:550px;"><b> i am matt shaw, a musician and coder based in dallas, texas.
-      <br><br>
-       i play music solo as well as with numerous bands including the <a href=https://dillonmyers.com/> dillon myers band</a>, <a href="https://www.facebook.com/Uda-Essim-Triangle-868856206560671/">uda essim triangle</a>, <a href="https://jakenice.wordpress.com/">jake nice</a>, <a href="http://www.tbamusicbooking.com/">tba music</a>, and various jazz bands. <br><br>
+      <div class="pbox">
+        <p style="position:fixed;top:135px;left:550px;"><b> I am Matt Shaw, a musician and coder based in Dallas, Texas.
+        <br><br>
+          I play music solo as well as with numerous bands including the <a href=https://dillonmyers.com/> Dillon Myers band</a>, <a href="https://www.facebook.com/Uda-Essim-Triangle-868856206560671/">Uda Essim Triangle</a>, <a href="https://jakenice.wordpress.com/">Jake Nice</a>, <a href="http://www.tbamusicbooking.com/">TBA Music</a>, and whoever else the gig requires. <br><br>
 
-      i have been coding freelance since 2016. most of my code is available on my <a href="https://www.github.com/atcq1227">github</a>.<br><br>
+          I have been coding freelance since 2016. Most of my code is available on my <a href="https://www.github.com/atcq1227">GitHub</a>.<br><br>
 
-      i attended southern methodist university where i graduated with honors with a double major in creative computation and music.<br><br>
+          I attended Southern Methodist university where I graduated with honors with a double major in Creative Computation and Music.<br><br>
 
-      during my time at smu, i received the engaged learning grant to develop a system, ujux, that detects and improvises music based on human audio input. it does so by using digital signal processing techniques and artificial intelligence algorithms. <br><br>
+          During my time at SMU, I received the engaged learning grant to develop a system, Ujux, that detects and improvises music based on human audio input. It does so by using digital signal processing techniques and artificial intelligence algorithms. <br><br>
 
-      i also composed the first three etudes of "songbook for ujux", an "open source composition" that uses ujux in creative ways to make music and allows others to expand the songbook with their own compositions.<br><br></b>
-      </p>
+          I also composed the first three etudes of "Songbook for Ujux", an "open source composition" that uses Ujux in creative ways to make music and allows others to expand the songbook with their own compositions.<br><br></b>
+
+          I currently work full time as a developer, but I am still available to take some freelance contracts.
+        </p>
+      </div>
     </div>
   </div>
 
   <div class=audio>
-    test
+    <div class=textbox>
+      <iframe style="position:fixed;top:150px;left:20px;width:500px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);" width="80%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/529469979%3Fsecret_token%3Ds-P0ido&color=%23e2d8fc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
+  </div>
+
+  <div class=visual>
+    <div class=textbox style="margin-top:150px">
+      <div id="cp_widget_cd9633e5-e2fc-4e94-9a10-90b86c8c5cd4">...</div>
+        <script type="text/javascript">
+          var cpo = [];
+          cpo["_object"] = "cp_widget_cd9633e5-e2fc-4e94-9a10-90b86c8c5cd4";
+          cpo["_fid"] = "AMHATQOyhQwq";
+          var _cpmp = _cpmp || [];
+          _cpmp.push(cpo);
+          (function() {
+              var cp = document.createElement("script");
+              cp.type = "text/javascript";
+              cp.async = true;
+              cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+              var c = document.getElementsByTagName("script")[0];
+              c.parentNode.insertBefore(cp, c);
+          })();
+        </script>
+    </div>
+  </div>
+
+  <div class=contact>
+    <div class=textbox>
+      <div style="float:left " class="container">
+            <!-- Form Started -->
+            <div style="float:left; padding-left:10px; padding-top:100px; " class="container form-top ">
+                <div class="row ">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 ">
+                        <div class="panel panel-danger ">
+                            <div class="panel-body ">
+                                <form id="reused_form ">
+                                    <div class="form-group ">
+                                        <label><i class="fa fa-user " aria-hidden="true "></i> Name</label>
+                                        <input type="text " name="name " class="form-control " placeholder="Enter Name ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label><i class="fa fa-envelope " aria-hidden="true "></i> Email</label>
+                                        <input type="email " name="email " class="form-control " placeholder="Enter Email ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label><i class="fa fa-comment " aria-hidden="true "></i> Message</label>
+                                        <textarea rows="3 " name="message " class="form-control " placeholder="Type Your Message "></textarea>
+                                    </div>
+                                    <div class="form-group ">
+                                        <button class="btn btn-raised btn-block btn-danger ">Post &rarr;</button>
+                                    </div>
+                                </form>
+                                <div id="error_message " style="width:100%; height:100%; display:none; ">
+                                    <h4>
+                                        Error
+                                    </h4>
+                                    Sorry there was an error sending your form. 
+                                </div>
+                                <div id="success_message " style="width:100%; height:100%; display:none; ">
+                                  <h2>Success! Your Message was Sent Successfully.</h2>
+                                    </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+          </div>
+            <!-- Form Ended -->
+      </div>
+    </div>
   </div>
 
   <body>

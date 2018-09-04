@@ -28,7 +28,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.d {
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -160,9 +160,17 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
-  margin-top: 0; 
-  margin-left: 10;
+.pbox p {
+/*  margin-top: 0; 
+  margin-left: 10;*/
+  max-width:50%;
+  padding:10px;
+  background-color: #D3D3D3;
+  opacity: 0.5;
+  filter: alpha(opacity=60);
+  font-weight: bold;
+  color: #000000;
+  box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.8);
 }
 
 
@@ -420,6 +428,10 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+#glcanvas {
+  display:block;
+}
+
 .nav {
   position:absolute;
   float:left;
@@ -456,27 +468,11 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-  .visual {
-    display:none;
-  }
-}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-  .visual {
-    display:none;
-  }
-}
+/* Mobile */
+@media (max-width: 700px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {
-  .visual {
-    display:none;
-  }
-}
+@media (min-width: 701px) {}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
