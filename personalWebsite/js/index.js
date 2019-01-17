@@ -93,9 +93,11 @@ float pattern( in vec2 p )
     return fbm( p + 4.0*r);
 }
 
+float map(float value, float min1, float max1, float min2, float max2) {
+  return min2 + (value - min1) * (max2 - min2) / (max1 - min1);
+}
+
 void main() {
-    //vec2 uv = vUv * u_resolution;
-    
     vec2 st = gl_FragCoord.xy/vec2(640,480);
     st.x *= 640.0/480.0;
     
@@ -107,11 +109,12 @@ void main() {
     
     color += vec3(pattern(st)) * mix(vec3(20,187,80), vec3(224,11,71), 0.01) / vec3(25,25,25);
 
-    color *= vec3(2.8,2.8,2.8);
+    color *= vec3(2.8,2.8,2.8) * vec3((sin(u_time / 5.0 + 37.0) * 50.0 + 10.0), (cos(u_time / 7.0 + 79.0) * 7.0 + 15.0), (sin(u_time / 100.0 + 53.0) * 0.1 + 5.0)) / vec3(15.0);
                  
      gl_FragColor = vec4((color * vec3(187,20,80) / vec3(256,256,256)), 1.0);
     }
   `;
+
   const shaderProgram = initShaderProgram(gl, vsSource, fsSource);
 
   const programInfo = {
